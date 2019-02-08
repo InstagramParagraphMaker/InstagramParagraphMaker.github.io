@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Instagram Paragraph Maker</title>
+    <link href="css/style.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bowser/1.9.3/bowser.min.js"></script>
+</head>
+<body>
+    <div class="mobileOnly">
+        <div id="contact">
+            <p>Clean & Beautiful Line Breaks for IG Captions!</p>
+            <textarea id="txtMsg" class="js-copytextarea"></textarea>
+        </div>
+        <div class="footer">
+            <div class="buttons">
+                <div id="btnConvertor" onclick="copyToClipboard('.js-copytextarea')">
+                    <span>CONVERT & COPY</span>
+                </div>
+                <div id="btnShare" onclick="shareURL(window.location.href)">
+                    <img src="images/share.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="desktop"
+			<div>
+            <p id="desktopOnly">Mobile only, Sorry.</p>
+			</div>
+    </div>
+	
+    <script src="js/script.js"></script>
+</body>
+</html>
