@@ -5,54 +5,39 @@ body {
     font-family: Heebo;
     background-color: #ede484;
 }
-
-.mobileOnly {
-    display: none;
+.main {
+    display: inline;
 }
-.desktop{
-	height: 95vh;
-	line-height:95vh;
-    overflow: hidden;
-	
-}
-.desktop #desktopOnly{
-text-align:center;
-    vertical-align:middle;
-	font-size: 25px;
-    color: #b26f5e;
-    font-weight: bold;
-}
-/* Smartphone Portrait and Landscape */
-@media only screen and (min-device-width : 300px) and (max-device-width : 850px) {
-    .mobileOnly {
-        display: inline;
-    }
-	.desktop{
-		display: none;
-	}
-}
-
-
 #contact {
     width: 100%;
     color: #b26f5e;
 }
 
-    #contact p {
-		line-height: 1.1;
-		margin-top:2%;
-        font-size: 37px;
+    #contact #title {
+        line-height: 1.1;
+        margin-top:6%;
+        font-size: 16px;
+        font-weight: bold;
         text-align: left;
-        margin-left: 6%;
-		margin-right:6%;
-		margin-bottom:18%;
+        margin-left: 7%;
+        margin-right:6%;
+        margin-bottom: 2px;
+    }
+    #contact #insta {
+        line-height: 1.1;
+        margin-top:5px;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 7%;
+        margin-right:6%;
+        margin-bottom: 26%;
     }
 
 textarea {
     width: 78%;
     height: 210px;
     display: block;
-	font-size: 14.5px;
+    font-size: 14.5px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -61,7 +46,7 @@ textarea {
     background-color: #c6a663;
     border-color: #c6a663;
     color: #424259;
-	padding :  19px;
+    padding :  19px;
 
 }
 textarea:focus, input:focus{
@@ -86,16 +71,16 @@ textarea:focus, input:focus{
     text-align: center;
     float: left;
     cursor: pointer;
-	-webkit-box-shadow: 0 23px 25px -20px black;
-	-moz-box-shadow: 0 23px 25px -20px black;
-	box-shadow: 0 23px 25px -20px black;
+    -webkit-box-shadow: 0 23px 25px -20px black;
+    -moz-box-shadow: 0 23px 25px -20px black;
+    box-shadow: 0 23px 25px -20px black;
 }
 
     #btnConvertor span {
         font-size: 12px;
         color: #ffffff;
         font-weight: bold;
-		
+        
     }
 
 #btnShare {
@@ -107,9 +92,9 @@ textarea:focus, input:focus{
     text-align: center;
     float: right;
     cursor: pointer;
-	-webkit-box-shadow: 0 13px 25px -6px black;
-	-moz-box-shadow: 0 13px 25px -6px black;
-	box-shadow: 0 13px 25px -6px black;
+    -webkit-box-shadow: 0 13px 25px -6px black;
+    -moz-box-shadow: 0 13px 25px -6px black;
+    box-shadow: 0 13px 25px -6px black;
 }
 
     #btnShare img {
@@ -124,4 +109,80 @@ textarea:focus, input:focus{
     margin-left: auto;
     margin-right: auto;
 }
+/* .desktop{
+	height: 95vh;
+	line-height:95vh;
+    overflow: hidden;
+	
+}
+.desktop #desktopOnly{
+text-align:center;
+    vertical-align:middle;
+	font-size: 25px;
+    color: #b26f5e;
+    font-weight: bold;
+} */
+/* Smartphone Portrait and Landscape */
+@media (min-width:768px){
+    #contact #title {
+        margin-top:3%;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 10%;
+    }
+    #contact #insta {
+        font-size: 16px;
+        margin-left: 10%;
+        margin-right:6%;
+        margin-bottom: 5%;
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #c6a663;
+        height: 30px;
+    }
+
+    #btnConvertor {
+        width: 80%;
+        line-height: 45px;
+        margin-top: -6%;
+        border-radius: 20px;
+        -webkit-box-shadow: 0 23px 25px -20px black;
+        -moz-box-shadow: 0 23px 25px -20px black;
+        box-shadow: 0 23px 25px -20px black;
+    }
+    
+        #btnConvertor span {
+            font-size: 12px;
+            color: #ffffff;
+            font-weight: bold;
+            
+        }
+
+        #btnShare {
+            width: 8%;
+            line-height: 45px;
+            margin-top: -7%;
+            border-radius: 50%;
+            background-color: #915274;
+            text-align: center;
+            float: right;
+            cursor: pointer;
+            -webkit-box-shadow: 0 13px 25px -6px black;
+            -moz-box-shadow: 0 13px 25px -6px black;
+            box-shadow: 0 13px 25px -6px black;
+        }
+        
+            #btnShare img {
+                vertical-align: middle;
+                width: 70%;
+                border-radius: 30%;
+            }
+}
+
+
 
